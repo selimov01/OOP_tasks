@@ -41,9 +41,3 @@ class Point:
     def get_point_with_max_distance(cls):
         max_dist = max(cls.points, key=lambda p: (p.get_distance_to_origin(), p.y))
         cls.display(max_dist)
-
-
-p1 = Point(4, 5)
-p2 = Point(2, 4)
-p3 = Point(5, 1)
-p2.get_point_with_max_distance()
